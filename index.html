@@ -50,10 +50,20 @@
       text-align: center;
     }
 
-    .calendly-inline-widget {
-      min-width: 320px;
-      height: 700px;
+    .cta-button {
       margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #00a2ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #007acc;
     }
   </style>
 </head>
@@ -70,18 +80,8 @@
     </div>
 
     <div class="calendly-section">
-      <h2>🎛️ Ready to Level Up Your Tracks?<br>Book a Free Call!</h2>
-
-      <!-- Calendly Inline Embed -->
-      <div 
-        class="calendly-inline-widget" 
-        data-url="https://calendly.com/indiestudiosph/30min" 
-        style="min-width:320px;height:700px;">
-      </div>
-    </div>
-  </div>
-
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</body>
-</html>
+      <h2>🎛️ Ready to Level Up Your Tracks?<br>Book a Free Call for Mixing or Recording Guidance</h2>
+      <button class="cta-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/indiestudiosph/30min'}); return false;">
+        Book Your Free Call
+      </button>
+    </di

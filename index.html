@@ -12,7 +12,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       color: white;
       font-family: Arial, sans-serif;
@@ -24,7 +24,7 @@
       padding: 20px;
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
       margin-bottom: 20px;
     }
@@ -44,11 +44,23 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     }
+
+    .calendly-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .calendly-inline-widget {
+      min-width: 320px;
+      height: 700px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🎧 Free Training: Record Better Demos at Home</h1>
+
     <div class="video-wrapper">
       <iframe 
         src="https://player.vimeo.com/video/1100809162?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
@@ -56,8 +68,20 @@
         title="Acoustic Treatment">
       </iframe>
     </div>
+
+    <div class="calendly-section">
+      <h2>🎛️ Ready to Level Up Your Tracks?<br>Book a Free Call!</h2>
+
+      <!-- Calendly Inline Embed -->
+      <div 
+        class="calendly-inline-widget" 
+        data-url="https://calendly.com/indiestudiosph/30min" 
+        style="min-width:320px;height:700px;">
+      </div>
+    </div>
   </div>
 
   <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

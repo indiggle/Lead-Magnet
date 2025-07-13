@@ -55,6 +55,24 @@
       height: 700px;
       margin-top: 20px;
     }
+
+    .highlighted-cta {
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: yellow;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                   -1px  1px 0 #000, 1px  1px 0 #000;
+      margin-bottom: 10px;
+    }
+
+    .cta-text {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -70,7 +88,8 @@
     </div>
 
     <div class="calendly-section">
-      <h2><strong>AMP Members:</strong> Book your free call below to start your mixing journey or inquire about recording!</h2>
+      <div class="highlighted-cta">AMP Members</div>
+      <div class="cta-text">Want to Upgrade your Demos? Book a Free Call!</div>
 
       <!-- Calendly Inline Embed -->
       <div 
